@@ -4,7 +4,34 @@ This engineering study compares three Verilog carry networks across exact additi
 
 **15 RTL configurations · 75,536 shared historical inputs · 1,198,800 fresh RTL evaluations · 5 image operations**
 
-**Carry-select highlight:** Each architecture produced **28 incorrect 17-bit words** out of **75,536** historical inputs (**0.03707%** word error rate) and **61 mismatched output bits** out of **1,284,112** (**0.004750%** bit error rate). The **10,000-row** full-width tail (which includes both `Cin = 0` and `Cin = 1`) had a **0.28000%** word error rate (`28 / 10,000`), with all **28** errors occurring among the **5,071** `Cin = 1` cases (**0.55216%**); the **65,536** exhaustive byte-pair inputs fixed `Cin = 0` and produced zero carry-select errors. Against each architecture's exact Genus baseline, carry-select saves **27.72%** (Ladner–Fischer), **37.13%** (Kogge–Stone), and **23.64%** (Brent–Kung) of reported total power, with **72–129% longer** unconstrained data paths.
+**Carry-select highlight:** Each architecture produced **28 incorrect 17-bit words** out of **75,536** historical inputs (**0.03707%** word error rate) and **61 mismatched output bits** out of **1,284,112** (**0.004750%** bit error rate). The **10,000-row** full-width tail (covering both `Cin = 0` and `Cin = 1`) had a **0.28000%** word error rate (`28 / 10,000`), with all **28** errors occurring among the **5,071** `Cin = 1` cases (**0.55216%**); the **65,536** exhaustive byte-pair inputs fixed `Cin = 0` and produced zero carry-select errors. Against each architecture's exact Genus baseline, carry-select saves **27.72%** (Ladner–Fischer), **37.13%** (Kogge–Stone), and **23.64%** (Brent–Kung) of reported total power, with **72–129% longer** unconstrained data paths.
+
+---
+
+## Original image-processing results
+
+The recovered MATLAB/Verilog codebase covers **Gaussian** and **mean** filters, **horizontal Sobel**, **saturated pixel addition**, and **brightness adjustment** (no separate pixel-wise image multiplication implementation or result was located). The Lena Gaussian and image-addition figures below come from the archived runs with display margins cropped for side-by-side comparison; unmodified captures and display-crop quality metrics appear in the [full original image gallery](docs/ORIGINAL_BENCHMARK_GALLERY.md).
+
+### Lena Gaussian filtering across all three architectures
+
+| Architecture | Exact | 2-bit | 4-bit | 8-bit | Carry-select |
+|---|---|---|---|---|---|
+| **Ladner–Fischer** | ![Ladner–Fischer Exact Gaussian](assets/benchmarks/panels/LFA_Gaussian_Exact.png) | ![Ladner–Fischer 2-bit Gaussian](assets/benchmarks/panels/LFA_Gaussian_approx2.png) | ![Ladner–Fischer 4-bit Gaussian](assets/benchmarks/panels/LFA_Gaussian_approx4.png) | ![Ladner–Fischer 8-bit Gaussian](assets/benchmarks/panels/LFA_Gaussian_approx8.png) | ![Ladner–Fischer Carry-select Gaussian](assets/benchmarks/panels/LFA_Gaussian_CSA.png) |
+| **Kogge–Stone** | ![Kogge–Stone Exact Gaussian](assets/benchmarks/panels/KSA_Gaussian_Exact.png) | ![Kogge–Stone 2-bit Gaussian](assets/benchmarks/panels/KSA_Gaussian_Approx2.png) | ![Kogge–Stone 4-bit Gaussian](assets/benchmarks/panels/KSA_Gaussian_Approx4.png) | ![Kogge–Stone 8-bit Gaussian](assets/benchmarks/panels/KSA_Gaussian_Approx8.png) | ![Kogge–Stone Carry-select Gaussian](assets/benchmarks/panels/KSA_Gaussian_CSA.png) |
+| **Brent–Kung** | ![Brent–Kung Exact Gaussian](assets/benchmarks/panels/gaussian_BKA.jpg.png) | ![Brent–Kung 2-bit Gaussian](assets/benchmarks/panels/BKA_Approx2_Gaussian.png) | ![Brent–Kung 4-bit Gaussian](assets/benchmarks/panels/gaussian_BKA_4.jpg.png) | ![Brent–Kung 8-bit Gaussian](assets/benchmarks/panels/gaussian_BKA_8.jpg.png) | ![Brent–Kung Carry-select Gaussian](assets/benchmarks/panels/gaussian_BKA_CSA.jpg.png) |
+
+*3×3 integer 1–2–1 separable Gaussian filter (normalized by 16) on Lena. Display-crop PSNR vs. each architecture's rendered Exact capture ([`archived-image-quality.csv`](results/archived-image-quality.csv)): LFA `55.73 / 55.73 / 20.20 dB` (2/4/8-bit); KSA `30.21 / 23.24 / 14.06 dB`; BKA `45.65 / 43.81 / 20.19 dB`; all CSA crops measure `inf` dB (`SSIM = 1.0`).*
+
+### Original image addition (Ladner–Fischer complete series)
+
+| Architecture | Exact | 2-bit | 4-bit | 8-bit | Carry-select |
+|---|---|---|---|---|---|
+| **Ladner–Fischer** | ![Ladner–Fischer Exact Addition](assets/benchmarks/panels/LFA_Imgadd_Exact.png) | ![Ladner–Fischer 2-bit Addition](assets/benchmarks/panels/LFA_Imgadd_approx2.png) | ![Ladner–Fischer 4-bit Addition](assets/benchmarks/panels/LFA_Imgadd_approx4.png) | ![Ladner–Fischer 8-bit Addition](assets/benchmarks/panels/LFA_Imgadd_approx8.png) | ![Ladner–Fischer Carry-select Addition](assets/benchmarks/panels/LFA_Imgadd_CSA.png) |
+
+*Saturated 8-bit image addition (`LFA_Imgadd_*`). The historical mixed MATLAB/Verilog script references Lena and `rice1.png` (exact raw input files and final run settings were not archived). Display-crop PSNR vs. rendered Exact: `44.02 dB` (2-bit), `31.59 dB` (4-bit), `11.17 dB` (8-bit), `inf` dB (CSA).*
+
+- [**Full original image gallery (61 captures: Mean, Sobel, KSA partial addition & brightness)**](docs/ORIGINAL_BENCHMARK_GALLERY.md)
+- [**12 original project graphs (with workbook & RTL replay discrepancy notes)**](docs/HISTORICAL_GRAPHS.md)
 
 ---
 
@@ -90,8 +117,6 @@ These savings use each architecture's archived exact report as its denominator. 
 ![Archived power, area and unconstrained paths by nominal configuration](assets/genus.svg)
 
 ## Reproduce the image experiments
-
-The original MATLAB/Verilog image-processing codebase covers **Gaussian** and **mean** filters, **horizontal Sobel**, **saturated pixel addition**, and **brightness adjustment** (no separate pixel-wise image multiplication implementation or output was recovered). Historical third-party benchmark captures (derived from Lena, Rice, and a cat photograph) remain excluded from this public repository pending redistribution clearance.
 
 To provide raw raster outputs, bit-accurate source-model linkage, and license-free reproducibility, the repository includes a deterministic grayscale demonstration (`scripts/images.py`) checked against Icarus Verilog on all 79,920 stimuli per design. It evaluates all 15 configurations across all 5 operations (`75` outputs, `results/image_demo.csv`):
 
