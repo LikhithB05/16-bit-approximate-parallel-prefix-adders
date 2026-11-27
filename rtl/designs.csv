@@ -1,0 +1,16 @@
+architecture,variant,top,rtl,replay_testbench,original_testbench,archived_relative_path,archived_sha256
+LFA,exact,ladner,rtl/lfa/exact.v,testbench/replay_tb.sv,testbench/ladner_legacy.v,execution/CODES(all)/Exact_LADNER.txt,59a51b359396af4d590e61ab2e7081c9de6aeaecaeb0f1971361b12f3c6bd5c2
+LFA,2,ladnerapprox2,rtl/lfa/2.v,testbench/replay_tb.sv,,execution/CODES(all)/LADNER_Approx2.txt,30d53a6888224404ef2a04b89d2b7d695a9bf1f725377819bb2e6d497683390b
+LFA,4,ladner_fig8,rtl/lfa/4.v,testbench/replay_tb.sv,,execution/CODES(all)/LADNER_Approx4.txt,72567db3618c6a945f8a16c618eaea728619139d22961cf22dbb1799a0ffbe25
+LFA,8,ladner_fig8,rtl/lfa/8.v,testbench/replay_tb.sv,,execution/CODES(all)/LADNER_Approx8.txt,de168ac4a52b91e33cd973a17112d3fe1f9b0322211627386a562dcea89f3a0f
+LFA,csa,ladner_fig8_m1,rtl/lfa/csa.v,testbench/replay_tb.sv,,execution/CODES(all)/LADNER_CSA.txt,b296b54037276be50d28ef4468160fa0e9c685270671ff348740c2bf1342ffe9
+KSA,exact,kogge_stone_fig4,rtl/ksa/exact.v,testbench/replay_tb.sv,,execution/CODES(all)/KSA/kogge stone.txt,0975d8ae60369a619bd7f502b46065497caaf31a8bf2fa8e189ca398c3bdf87a
+KSA,2,kogge_stone_fig4,rtl/ksa/2.v,testbench/replay_tb.sv,,execution/CODES(all)/KSA/koggestone(approx2).txt,90010b2c5587a8d3a422d36e82c774bd939c712d847676abe13a0a9af082a702
+KSA,4,kogge_stone_fig4,rtl/ksa/4.v,testbench/replay_tb.sv,,execution/CODES(all)/KSA/koggestone(approx4).txt,cac12e576f72e74f8ba123932e3aa6b70bd0fefc4f236168f3a7d024c89f3119
+KSA,8,kogge_stone_fig4,rtl/ksa/8.v,testbench/replay_tb.sv,,execution/CODES(all)/KSA/koggestone(approx8).txt,74e5f048e5c5e6064e399a32f4e59b3f59503b63448c76b91ace76291a0dd659
+KSA,csa,ksa_csa,rtl/ksa/csa.v,testbench/replay_tb.sv,,execution/CODES(all)/KSA/KSA_CSA.txt,c73e858078d875950e0a61b360ff531a4dfc0d44f7bbbddaac0d5a0d9ca7663a
+BKA,exact,Brkung,rtl/bka/exact.v,testbench/replay_tb.sv,testbench/Brkung_tb.v,execution/CODES(all)/BKA/Brent kung.txt,b0ae444ce25a2f66c6be66e3ec4a942250000cd006de0b8a405da5c798040cf8
+BKA,2,BKapprox2,rtl/bka/2.v,testbench/replay_tb.sv,,execution/CODES(all)/BKA/BKapprox2.txt,3497c4a77c88eb4ecf451b05b873cf7d66e213d3eca0b8011ddd71cf0cbd2f3d
+BKA,4,BKapprox4,rtl/bka/4.v,testbench/replay_tb.sv,,execution/CODES(all)/BKA/BKapprox4.txt,3c3391788c5728f7d72bedcfbe66f0e73492bc009f01c70021bbf5656658af8d
+BKA,8,BKapprox8,rtl/bka/8.v,testbench/replay_tb.sv,,execution/CODES(all)/BKA/BKapprox8.txt,c64c60d71ff1d9e8cb65d0d9061e73ea813b20e9f7155ece98d2c93be9bf5b8b
+BKA,csa,bka_csa,rtl/bka/csa.v,testbench/replay_tb.sv,,execution/CODES(all)/BKA/BKA_CSA.txt,ebdfb28913eeb2f5c59bf9ce55b4fa2a9ce035e917bdbcb2652508a7d88b2ea2

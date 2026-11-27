@@ -1,0 +1,13 @@
+architecture,variant,top,prefix_cells,replaced_cells,deepest_prefix,max_pair_loads,replaced_labels
+LFA,exact,ladner,31,0,5,9,
+LFA,2,ladnerapprox2,31,1,5,9,L1_1
+LFA,4,ladner_fig8,31,4,5,9,L1_1 D_2 L1_3 L2_3
+LFA,8,ladner_fig8,31,12,5,9,L1_1 D_2 L1_3 L2_3 D_4 L1_5 D_5 D_6_temp D_6 L1_7 L2_7 L3_7
+KSA,exact,kogge_stone_fig4,49,0,4,5,
+KSA,2,kogge_stone_fig4,49,1,4,5,L1_1
+KSA,4,kogge_stone_fig4,49,5,4,5,L1_1 L1_2 L2_2 L1_3 L2_3
+KSA,8,kogge_stone_fig4,49,17,4,5,L1_1 L1_2 L2_2 L1_3 L2_3 L1_4 L2_4 L3_4 L1_5 L2_5 L3_5 L1_6 L2_6 L3_6 L1_7 L2_7 L3_7
+BKA,exact,Brkung,26,0,6,5,
+BKA,2,BKapprox2,26,1,6,5,L1_1
+BKA,4,BKapprox4,26,4,6,5,L1_1 D_2 L1_3 L2_3
+BKA,8,BKapprox8,26,11,6,5,L1_1 D_2 L1_3 L2_3 D_4 L1_5 D_5 D_6 L1_7 L2_7 L3_7

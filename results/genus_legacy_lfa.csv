@@ -1,0 +1,5 @@
+variant,source,top,cells,cell_area,leakage_w,internal_w,switching_w,total_w,path_ps,path_condition,startpoint,endpoint,report_date
+exact,EXACT LFA REPORT.txt,lfa,86,486.687,2.41905e-06,1.04501e-05,4.3645e-06,1.72336e-05,2589,UNCONSTRAINED,B[1],Sum[15],Nov 15 2025  09:10:40 am
+2,REPORT APPROX 2 (LFA).txt,ladner_fig8,74,465.493,2.46903e-06,9.77459e-06,4.01052e-06,1.62541e-05,2434,UNCONSTRAINED,B[2],Sum[15],Nov 06 2025  04:08:08 pm
+4,APPROX4 REPORT (LFA).txt,dog,69,450.355,2.39443e-06,9.25923e-06,3.82123e-06,1.54749e-05,2282,UNCONSTRAINED,A[5],Sum[15],Nov 17 2025  03:21:19 pm
+8,APPROX 8 REPORT (LFA).txt,approx8,80,430.676,2.20156e-06,7.98131e-06,3.82962e-06,1.40125e-05,1411,UNCONSTRAINED,B[9],Sum[15],Nov 15 2025  09:42:13 am

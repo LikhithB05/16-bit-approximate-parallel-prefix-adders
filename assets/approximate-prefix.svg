@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="270" viewBox="0 0 1020 270">
+<title>Low-order prefix cell bypass and carry dependency</title>
+<desc>Three bit-region bands show retained upper logic, changed lower cells, and the unchanged bit zero seed. Exact group logic combines two inputs and the bypass forwards the higher-index pair.</desc>
+<rect width="1020" height="270" rx="18" fill="#0f2032"/>
+<g font-family="monospace" fill="#eff6ff">
+<text x="34" y="42" font-size="24">16-bit datapath · selected lower prefix cells bypassed</text>
+<rect x="34" y="71" width="390" height="57" rx="6" fill="#285b73"/>
+<rect x="428" y="71" width="370" height="57" rx="6" fill="#a26535"/>
+<rect x="802" y="71" width="184" height="57" rx="6" fill="#285b73"/>
+<text x="51" y="95" font-size="17">15 … k</text><text x="51" y="115" font-size="13">Exact cell equations</text>
+<text x="444" y="95" font-size="17">k−1 … 1</text><text x="444" y="115" font-size="13">Selected G/P pair bypasses</text>
+<text x="819" y="95" font-size="17">0</text><text x="819" y="115" font-size="13">Unchanged seed</text>
+<path d="M615 138v13H227v-13m-6 6 6-6 6 6" fill="none" stroke="#fac887" stroke-width="2"/>
+<text x="34" y="185" font-size="16" fill="#a5e1dc">Exact</text>
+<text x="158" y="185" font-size="16">G = Ghi | (Phi &amp; Glo)    P = Phi &amp; Plo</text>
+<text x="34" y="215" font-size="16" fill="#fac887">Bypass</text>
+<text x="158" y="215" font-size="16">G = Ghi                 P = Phi</text>
+<text x="34" y="247" font-size="14" fill="#bbcedf">k ∈ {2, 4, 8} · changed lower prefix signals may alter upper sums and carry-out</text>
+</g></svg>

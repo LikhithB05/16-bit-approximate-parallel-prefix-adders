@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="450" viewBox="0 0 1020 450">
+<rect width="100%" height="100%" rx="18" fill="#0f2032"/>
+<g font-family="monospace" fill="#eff6ff">
+<text x="35" y="40" font-size="24">LFA exact adder · RTL prefix dependencies</text>
+<text x="35" y="64" font-size="13" fill="#a6bbd0">Vertical placement shows operator depth. Gold edges select the prefix used for the next carry.</text>
+<path d="M931 95v300" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="931" y="417" text-anchor="middle" font-size="13">C1</text>
+<path d="M874 147v248" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="874" y="417" text-anchor="middle" font-size="13">C2</text>
+<path d="M817 199v196" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="817" y="417" text-anchor="middle" font-size="13">C3</text>
+<path d="M760 199v196" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="760" y="417" text-anchor="middle" font-size="13">C4</text>
+<path d="M703 251v144" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="703" y="417" text-anchor="middle" font-size="13">C5</text>
+<path d="M646 251v144" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="646" y="417" text-anchor="middle" font-size="13">C6</text>
+<path d="M589 251v144" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="589" y="417" text-anchor="middle" font-size="13">C7</text>
+<path d="M532 251v144" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="532" y="417" text-anchor="middle" font-size="13">C8</text>
+<path d="M475 303v92" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="475" y="417" text-anchor="middle" font-size="13">C9</text>
+<path d="M418 303v92" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="418" y="417" text-anchor="middle" font-size="13">C10</text>
+<path d="M361 303v92" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="361" y="417" text-anchor="middle" font-size="13">C11</text>
+<path d="M304 303v92" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="304" y="417" text-anchor="middle" font-size="13">C12</text>
+<path d="M247 303v92" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="247" y="417" text-anchor="middle" font-size="13">C13</text>
+<path d="M190 303v92" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="190" y="417" text-anchor="middle" font-size="13">C14</text>
+<path d="M133 355v40" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="133" y="417" text-anchor="middle" font-size="13">C15</text>
+<path d="M76 303v92" stroke="#f6c477" stroke-opacity=".75" stroke-dasharray="4 4"/>
+<text x="76" y="417" text-anchor="middle" font-size="13">C16</text>
+<path d="M931 95 L874 147" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M874 95 L874 147" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M874 147 L817 199" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M817 95 L817 199" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M817 95 L760 147" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M760 95 L760 147" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M874 147 L760 199" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M760 147 L760 199" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M760 199 L703 251" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M703 95 L703 251" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M703 95 L646 147" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M646 95 L646 147" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M760 199 L646 251" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M646 147 L646 251" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M646 147 L589 199" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M589 95 L589 199" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M760 199 L589 251" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M589 199 L589 251" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M589 95 L532 147" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M532 95 L532 147" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M646 147 L532 199" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M532 147 L532 199" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M760 199 L532 251" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M532 199 L532 251" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M532 251 L475 303" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M475 95 L475 303" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M475 95 L418 147" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M418 95 L418 147" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M532 251 L418 303" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M418 147 L418 303" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M418 147 L361 199" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M361 95 L361 199" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M532 251 L361 303" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M361 199 L361 303" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M361 95 L304 147" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M304 95 L304 147" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M418 147 L304 199" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M304 147 L304 199" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M532 251 L304 303" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M304 199 L304 303" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M304 199 L247 251" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M247 95 L247 251" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M532 251 L247 303" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M247 251 L247 303" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M247 95 L190 147" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M190 95 L190 147" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M304 199 L190 251" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M190 147 L190 251" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M532 251 L190 303" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M190 251 L190 303" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M190 251 L133 303" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M133 95 L133 303" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M532 251 L133 355" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M133 303 L133 355" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M133 95 L76 147" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M76 95 L76 147" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M190 147 L76 199" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M76 147 L76 199" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M304 199 L76 251" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M76 199 L76 251" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<path d="M532 251 L76 303" stroke="#50a5ca" stroke-opacity=".75" fill="none"/>
+<path d="M76 251 L76 303" stroke="#b8d4f0" stroke-opacity=".75" fill="none"/>
+<circle cx="931" cy="95" r="3.5" fill="#b6c8db"><title>G[0]</title></circle>
+<text x="931" y="84" font-size="10" text-anchor="middle">0</text>
+<circle cx="874" cy="95" r="3.5" fill="#b6c8db"><title>G[1]</title></circle>
+<text x="874" y="84" font-size="10" text-anchor="middle">1</text>
+<circle cx="817" cy="95" r="3.5" fill="#b6c8db"><title>G[2]</title></circle>
+<text x="817" y="84" font-size="10" text-anchor="middle">2</text>
+<circle cx="760" cy="95" r="3.5" fill="#b6c8db"><title>G[3]</title></circle>
+<text x="760" y="84" font-size="10" text-anchor="middle">3</text>
+<circle cx="703" cy="95" r="3.5" fill="#b6c8db"><title>G[4]</title></circle>
+<text x="703" y="84" font-size="10" text-anchor="middle">4</text>
+<circle cx="646" cy="95" r="3.5" fill="#b6c8db"><title>G[5]</title></circle>
+<text x="646" y="84" font-size="10" text-anchor="middle">5</text>
+<circle cx="589" cy="95" r="3.5" fill="#b6c8db"><title>G[6]</title></circle>
+<text x="589" y="84" font-size="10" text-anchor="middle">6</text>
+<circle cx="532" cy="95" r="3.5" fill="#b6c8db"><title>G[7]</title></circle>
+<text x="532" y="84" font-size="10" text-anchor="middle">7</text>
+<circle cx="475" cy="95" r="3.5" fill="#b6c8db"><title>G[8]</title></circle>
+<text x="475" y="84" font-size="10" text-anchor="middle">8</text>
+<circle cx="418" cy="95" r="3.5" fill="#b6c8db"><title>G[9]</title></circle>
+<text x="418" y="84" font-size="10" text-anchor="middle">9</text>
+<circle cx="361" cy="95" r="3.5" fill="#b6c8db"><title>G[10]</title></circle>
+<text x="361" y="84" font-size="10" text-anchor="middle">10</text>
+<circle cx="304" cy="95" r="3.5" fill="#b6c8db"><title>G[11]</title></circle>
+<text x="304" y="84" font-size="10" text-anchor="middle">11</text>
+<circle cx="247" cy="95" r="3.5" fill="#b6c8db"><title>G[12]</title></circle>
+<text x="247" y="84" font-size="10" text-anchor="middle">12</text>
+<circle cx="190" cy="95" r="3.5" fill="#b6c8db"><title>G[13]</title></circle>
+<text x="190" y="84" font-size="10" text-anchor="middle">13</text>
+<circle cx="133" cy="95" r="3.5" fill="#b6c8db"><title>G[14]</title></circle>
+<text x="133" y="84" font-size="10" text-anchor="middle">14</text>
+<circle cx="76" cy="95" r="3.5" fill="#b6c8db"><title>G[15]</title></circle>
+<text x="76" y="84" font-size="10" text-anchor="middle">15</text>
+<circle cx="874" cy="147" r="5" fill="#46d6ca"><title>L1_1</title></circle>
+<circle cx="817" cy="199" r="5" fill="#46d6ca"><title>D_2</title></circle>
+<circle cx="760" cy="147" r="5" fill="#46d6ca"><title>L1_3</title></circle>
+<circle cx="760" cy="199" r="5" fill="#46d6ca"><title>L2_3</title></circle>
+<circle cx="703" cy="251" r="5" fill="#46d6ca"><title>D_4</title></circle>
+<circle cx="646" cy="147" r="5" fill="#46d6ca"><title>L1_5</title></circle>
+<circle cx="646" cy="251" r="5" fill="#46d6ca"><title>D_5</title></circle>
+<circle cx="589" cy="199" r="5" fill="#46d6ca"><title>D_6_temp</title></circle>
+<circle cx="589" cy="251" r="5" fill="#46d6ca"><title>D_6</title></circle>
+<circle cx="532" cy="147" r="5" fill="#46d6ca"><title>L1_7</title></circle>
+<circle cx="532" cy="199" r="5" fill="#46d6ca"><title>L2_7</title></circle>
+<circle cx="532" cy="251" r="5" fill="#46d6ca"><title>L3_7</title></circle>
+<circle cx="475" cy="303" r="5" fill="#46d6ca"><title>D_8</title></circle>
+<circle cx="418" cy="147" r="5" fill="#46d6ca"><title>L1_9</title></circle>
+<circle cx="418" cy="303" r="5" fill="#46d6ca"><title>D_9</title></circle>
+<circle cx="361" cy="199" r="5" fill="#46d6ca"><title>D_10_temp</title></circle>
+<circle cx="361" cy="303" r="5" fill="#46d6ca"><title>D_10</title></circle>
+<circle cx="304" cy="147" r="5" fill="#46d6ca"><title>L1_11</title></circle>
+<circle cx="304" cy="199" r="5" fill="#46d6ca"><title>L2_11</title></circle>
+<circle cx="304" cy="303" r="5" fill="#46d6ca"><title>D_11</title></circle>
+<circle cx="247" cy="251" r="5" fill="#46d6ca"><title>D_12_temp</title></circle>
+<circle cx="247" cy="303" r="5" fill="#46d6ca"><title>D_12</title></circle>
+<circle cx="190" cy="147" r="5" fill="#46d6ca"><title>L1_13</title></circle>
+<circle cx="190" cy="251" r="5" fill="#46d6ca"><title>D_13_temp</title></circle>
+<circle cx="190" cy="303" r="5" fill="#46d6ca"><title>D_13</title></circle>
+<circle cx="133" cy="303" r="5" fill="#46d6ca"><title>D_14_temp</title></circle>
+<circle cx="133" cy="355" r="5" fill="#46d6ca"><title>D_14</title></circle>
+<circle cx="76" cy="147" r="5" fill="#46d6ca"><title>L1_15</title></circle>
+<circle cx="76" cy="199" r="5" fill="#46d6ca"><title>L2_15</title></circle>
+<circle cx="76" cy="251" r="5" fill="#46d6ca"><title>L3_15</title></circle>
+<circle cx="76" cy="303" r="5" fill="#46d6ca"><title>L4_15</title></circle>
+</g></svg>
